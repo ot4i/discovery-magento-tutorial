@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "displayOrder": 9,
+        "title": "Product ID",
+        "type": "number"
+      },
+      "sku": {
+        "displayOrder": 3,
+        "title": "Product SKU",
+        "type": "string"
+      },
+      "name": {
+        "displayOrder": 2,
+        "title": "Product name",
+        "type": "string"
+      },
+      "attribute_set_id": {
+        "displayOrder": 1,
+        "title": "Attribute set ID",
+        "type": "string"
+      },
+      "price": {
+        "displayOrder": 4,
+        "title": "Price",
+        "type": "number"
+      },
+      "status": {
+        "displayOrder": 6,
+        "title": "Status",
+        "type": "number"
+      },
+      "visibility": {
+        "displayOrder": 8,
+        "title": "Visibility",
+        "type": "number"
+      },
+      "type_id": {
+        "displayOrder": 10,
+        "title": "Product type",
+        "enum": [
+          "simple",
+          "virtual",
+          "downloadable",
+          "configurable",
+          "grouped",
+          "bundle"
+        ],
+        "type": "string"
+      },
+      "created_at": {
+        "displayOrder": 18,
+        "title": "Created at",
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "displayOrder": 19,
+        "title": "Updated at",
+        "type": "string",
+        "format": "date-time"
+      },
+      "weight": {
+        "displayOrder": 7,
+        "title": "Weight",
+        "type": "number"
+      },
+      "custom_attributes": {
+        "displayOrder": 12,
+        "title": "Custom attributes",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "attribute_code": {
+              "displayOrder": 1,
+              "title": "Attribute code",
+              "display": {
+                "nullable": false
+              },
+              "type": "string"
+            },
+            "value": {
+              "displayOrder": 2,
+              "title": "Attribute value",
+              "display": {
+                "nullable": false
+              },
+              "type": "string"
+            }
+          }
+        }
+      },
+      "saveOptions": {
+        "displayOrder": 16,
+        "title": "Save options",
+        "type": "boolean"
+      }
+    },
+    "title": "Product",
+    "required": [
+      "sku",
+      "name",
+      "attribute_set_id",
+      "price"
+    ]
+  },
+  "type": "array",
+  "title": "Product"
+}

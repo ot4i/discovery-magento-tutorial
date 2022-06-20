@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policies>
+  <policy policyType="magento" policyName="Magento1" policyTemplate="">
+    <applicationType>online</applicationType>
+    <applicationVersion>v1</applicationVersion>
+    <authorizationMethod>BASIC</authorizationMethod>
+    <endpointUrl>REPLACE_WITH_YOUR_STORE_URL</endpointUrl>
+    <credentialName>CompletePolicyProjectMagento_Magento1</credentialName>
+  </policy>
+</policies>
